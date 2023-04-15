@@ -12,7 +12,7 @@ const Header = () => {
         </div>
         <div className='cart-link'>
             <Link to={'/cart'}>
-              <span><BsCartCheckFill size={'large'}/></span>
+              <span><BsCartCheckFill/></span>
             </Link>
         </div>
     </div>
