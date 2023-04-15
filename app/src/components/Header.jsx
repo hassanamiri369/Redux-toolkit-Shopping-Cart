@@ -1,6 +1,8 @@
 import React from 'react';
 import {Link} from "react-router-dom";
 
+import { BsCartCheckFill } from 'react-icons/bs';
+
 
 const Header = () => {
   return (
@@ -9,7 +11,9 @@ const Header = () => {
             <Link to={'/'}>Shopping</Link>
         </div>
         <div className='cart-link'>
-            <Link to={'/cart'}>Cart</Link>
+            <Link to={'/cart'}>
+              <span><BsCartCheckFill size={'large'}/></span>
+            </Link>
         </div>
     </div>
   )
