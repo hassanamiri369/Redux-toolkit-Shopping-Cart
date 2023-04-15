@@ -1,5 +1,12 @@
+import {Routes , Route , Link} from "react-router-dom";
 
-import Header from "./components/Header"
+// components
+import Header from "./components/Header";
+
+// pages
+import Home from "./pages/Home";
+import Cart from "./pages/Cart";
+
 
 function App() {
   
@@ -13,7 +20,10 @@ function App() {
     </div>
 
     <div className='routes'>
-
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+        <Route path="/cart" element={<Cart/>}/>
+      </Routes>
     </div>
    
    </>
