@@ -2,7 +2,7 @@ import React from 'react'
 
 const BookItem = ({key , book}) => {
   return (
-    <div className='bookItem-container' style={{width : "250px",margin :"10px",border : "1px solid black"}}>
+    <div className='bookItem-container' >
         <img width={250} height={250} src={book.imageUrl} alt='product name'/>
         <div className='content'>
         <p className='name'>{book.name}</p>

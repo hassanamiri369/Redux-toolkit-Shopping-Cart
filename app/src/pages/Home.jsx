@@ -8,7 +8,7 @@ import BookItem from '../components/BookItem';
 
 const Home = () => {
   return (
-    <div className='home-container' style={{display : "flex" , flexWrap : "wrap" , justifyContent : "center" }}>
+    <div className='home-container'>
       {BookProduct.map((book , index) =>(
         <div key={book.id} style={{display : "flex"  }} >
           <BookItem book={book}/>
