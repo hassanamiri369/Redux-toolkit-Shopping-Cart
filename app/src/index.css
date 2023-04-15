@@ -32,6 +32,9 @@ html ,body{
   font-family: monospace;
 }
 
+.header .cart-link span{
+  font-size: 24px;
+}
 
 /* routes */
 .routes{
