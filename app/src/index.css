@@ -1,0 +1,53 @@
+html ,body{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+/* header */
+
+.header{
+
+  display: flex;
+  justify-content: space-between;
+  
+  background-color: rgb(237, 242, 243);
+  width: 100%;
+  height: 4rem;
+  box-shadow: 0 0 10px rgb(184, 181, 181);
+  
+}
+
+.header div{
+ 
+  margin: 20px;
+  font-size: 20px;
+  
+}
+
+.header div a{
+  text-decoration: none;
+  font-weight: bold;
+  font-family: monospace;
+}
+
+
+/* routes */
+.routes{
+  width: 100%;
+  min-height: calc(100vh - 4rem);
+
+  
+
+}
+
+
+
+/* home page */
+.home-container{
+  /* background-color: olivedrab; */
+  padding: 10px;
+  min-height: calc(100vh - 5.5rem);
+
+}
