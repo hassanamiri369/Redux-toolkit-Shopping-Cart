@@ -6,10 +6,17 @@ import './index.css'
 // config router
 import { BrowserRouter } from "react-router-dom";
 
+// config Redux-toolkit provider
+import {Provider} from "react-redux";
+import store from './Redux/store';
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter>
-      <App />
+    <Provider store={store}>
+    <App />
+    </Provider>
+     
     </BrowserRouter>
 
   </React.StrictMode>,
