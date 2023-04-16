@@ -94,12 +94,12 @@ html ,body{
 .box button{
   border: none;
   padding: 10px;
-  background-color: green;
+  background-color: rgb(98, 0, 128);
   border-radius: 5px;
   color: white;
   cursor: pointer;
 }
 
 .box button:hover{
-  background-color: rgb(3, 201, 3);
+  background-color: rgb(140, 7, 180);
 }
