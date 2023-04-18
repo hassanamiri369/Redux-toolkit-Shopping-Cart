@@ -8,8 +8,8 @@ import { BsCartCheckFill } from 'react-icons/bs';
 
 const Header = () => {
 
-  const list = useSelector(state => state.cart.list)
-  console.log(list)
+  const list = useSelector(state => state.cart)
+  console.log(list.cart?.length)
 
   return (
     <div className='header'>
@@ -18,7 +18,7 @@ const Header = () => {
         </div>
         <div className='cart-link'>
             <Link to={'/cart'}>
-              <span><BsCartCheckFill/>{list?.length}</span>
+              <span><BsCartCheckFill/>{list?.cart?.length}</span>
             </Link>
         </div>
     </div>
