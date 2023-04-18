@@ -1,5 +1,5 @@
 import React from 'react'
-import {useDispatch} from "react-redux";
+import {useDispatch , useSelector} from "react-redux";
 import { AddToCart } from '../Redux/cartSlice';
 
 
@@ -7,10 +7,13 @@ const BookItem = ({key , book}) => {
 
   const dispatch = useDispatch()
 
+const list = useSelector(state => state.cart)
 
 
   const handleAddToCart = (book)=>{
-    dispatch(AddToCart({...book , quantity : 1}))
+    const existItem = list.cart.find(item => item.id === book.id)
+    const quantity = existItem ? existItem.quantity + 1 : 1;
+    dispatch(AddToCart({...book , quantity}))
   }
 
   return (
