@@ -17,7 +17,7 @@ const Header = () => {
             <Link to={'/'}>Shopping</Link>
         </div>
         <div className='cart-link'>
-            <Link to={'/cart'}>
+            <Link to={'/cartPage'}>
               <span><BsCartCheckFill/>{list?.cart?.length}</span>
             </Link>
         </div>
