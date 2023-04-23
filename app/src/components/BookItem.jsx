@@ -1,6 +1,6 @@
 import React from 'react'
 import {useDispatch , useSelector} from "react-redux";
-import { AddToCart } from '../Redux/cartSlice';
+import { AddToCart , deleteProduct, resetCart } from '../Redux/cartSlice';
 
 
 const BookItem = ({key , book}) => {
@@ -11,10 +11,10 @@ const list = useSelector(state => state.cart)
 
 
   const handleAddToCart = (book)=>{
-    const existItem = list.cart.find(item => item.id === book.id)
-    const quantity = existItem ? existItem.quantity + 1 : 1;
-    dispatch(AddToCart({...book , quantity}))
+    dispatch(AddToCart({...book}))
   }
+
+  
 
   return (
     <div className='bookItem-container' >
