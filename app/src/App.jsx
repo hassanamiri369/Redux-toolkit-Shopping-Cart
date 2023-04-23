@@ -5,6 +5,7 @@ import Header from "./components/Header";
 
 // pages
 import Home from "./pages/Home";
+import CartPage from "./pages/CartPage";
 
 
 
@@ -22,6 +23,7 @@ function App() {
     <div className='routes'>
       <Routes>
         <Route path="/" element={<Home/>}/>
+        <Route path="/cartPage" element={<CartPage/>}/>
       </Routes>
     </div>
    
